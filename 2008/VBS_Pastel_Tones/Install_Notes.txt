@@ -1,0 +1,32 @@
+  -----------------------------------------------------------------
+  VBS PASTEL TONES
+  -----------------------------------------------------------------
+
+  THIS VB SETTINGS WILL CHANGE YOUR TEXT EDITOR (COLORS AND CONFIGS)
+  FOR VBSCRIPT EDITTING AND HTML EDITTING
+  
+  TO INSTALL:
+ 
+  STEP 1___________________________________________________________
+  
+  INSTALL THE ALL TTF FONTS INSIDE "TTFONTS" FOLDER
+
+  STEP 2___________________________________________________________
+
+  CLOSE ALL YOUR PROJETCS AND
+  
+  1) CLICK: "TOOLS > IMPORT AND EXPORTS SETTINGS"
+  2) SELECT "IMPORTS SELECTED ENFIRONMENT SETTINGS"
+  3) CHOOSE A LOCATION TO SAVE YOUR CURRENT SETTINGS
+  4) CLICK: "BROWSE..."
+  5) CHOOSE THE "VBS_Pastel_Tones.vssettings" FILE
+  
+  THE "VBS_Pastel_Tones.vssettings" FILE WILL BE ADDED TO THE SETTINGS LIST
+
+  6) HIGHLIGHT THE CHOOSE "VBS_Pastel_Tones.vssettings"
+  7) CLICK: "NEXT"
+  8) CLICK: "FINISH"  
+
+  -----------------------------------------------------------------
+  DEVELOPED BY RODRIGO REIS (RODRIGOSOR@GMAIL.COM)
+  -----------------------------------------------------------------

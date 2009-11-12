@@ -1,0 +1,34 @@
+<TemplatesExport>
+  <Template uid="64ac7cc7-f6b4-43d9-a7cd-952ba1ce8ead" text="[NUnit.Framework.TestFixture]&#xD;&#xA;public class $CATEGORY$_$BUSINESSID$_$RULENAME$_Tests&#xD;&#xA;{&#xD;&#xA;	private IBusinessRule&lt;$ENTITY$&gt; rule;&#xD;&#xA;	&#xD;&#xA;	[NUnit.Framework.SetUp]&#xD;&#xA;	public void Setup()&#xD;&#xA;	{&#xD;&#xA;		rule = $INSTANCEOFRULE$;&#xD;&#xA;	}&#xD;&#xA;	&#xD;&#xA;    [NUnit.Framework.Test]&#xD;&#xA;    public void HasCorrectBusinessID()&#xD;&#xA;    {&#xD;&#xA;        Assert.That(rule.BusinessID, Is.EqualTo(&quot;$BUSINESSID$&quot;));&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    [NUnit.Framework.Test]&#xD;&#xA;    public void HasCorrectDescription()&#xD;&#xA;    {&#xD;&#xA;        Assert.That(rule.Description, Is.EqualTo(&quot;&quot;));&#xD;&#xA;    }&#xD;&#xA;    &#xD;&#xA;    $END$&#xD;&#xA;}" shortcut="businessruletestfixture" description="BusinessRuleTestFixtureClass" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="CATEGORY" expression="" initialRange="0" />
+      <Variable name="BUSINESSID" expression="" initialRange="0" />
+      <Variable name="ENTITY" expression="" initialRange="0" />
+      <Variable name="INSTANCEOFRULE" expression="" initialRange="0" />
+      <Variable name="RULENAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="BusinssRuleTest" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="True" />
+    </CustomProperties>
+  </Template>
+  <Template uid="6e077518-5caf-4d8c-bf9e-1056a90d39d0" text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;&#xD;&#xA;&lt;hibernate-mapping xmlns=&quot;urn:nhibernate-mapping-2.2&quot;&#xD;&#xA;                 assembly=&quot;SFS.Domain&quot;&#xD;&#xA;                 namespace=&quot;SFS.Domain.Entities&quot;&gt;&#xD;&#xA;  &lt;class name=&quot;SFS.Domain.Entities.$ENTITYNAME$&quot; table=&quot;$ENTITYNAME$&quot; lazy=&quot;true&quot; &gt;&#xD;&#xA;    &lt;id name=&quot;ID&quot; column=&quot;$ENTITYNAME$ID&quot; type=&quot;Guid&quot;&gt;&#xD;&#xA;      &lt;generator class=&quot;guid.comb&quot; /&gt;&#xD;&#xA;    &lt;/id&gt;&#xD;&#xA;    $END$&#xD;&#xA;  &lt;/class&gt;&#xD;&#xA;&lt;/hibernate-mapping&gt;" shortcut="" description="HBM " reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="ENTITYNAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="NewMapping.hbm" />
+      <Property key="Extension" value="xml" />
+      <Property key="ValidateFileName" value="True" />
+    </CustomProperties>
+  </Template>
+</TemplatesExport>

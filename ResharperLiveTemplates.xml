@@ -1,0 +1,140 @@
+<TemplatesExport>
+  <Template uid="edc5d2a0-92e2-45de-9e7d-3f708ad80d49" shortcut="iprop" description="" text="$TYPE$ $NAME$ { get; set; }" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="TypeMember" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="TYPE" expression="" initialRange="0" />
+      <Variable name="NAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="d9cc7dfa-2be9-4e91-8a47-9d66554eb560" shortcut="nat" description="" text="NUnit.Framework.Assert.That($ACTUAL$, $CONSTRAINT$);" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="ACTUAL" expression="" initialRange="0" />
+      <Variable name="CONSTRAINT" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="5bbdd097-1b3f-42fb-a0e6-ef611d3c65a9" shortcut="thrni" description="" text="throw new System.NotImplementedException(&quot;$END$&quot;);" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="25aa5ce4-5332-4bd9-b556-12a03570f76b" shortcut="ibusinessrule" description="" text="public static IBusinessRule&lt;$DTO$&gt; $RULENAME$&#xD;&#xA;{&#xD;&#xA;    get&#xD;&#xA;    {&#xD;&#xA;        return new BusinessRule&lt;$DTO$&gt;(&#xD;&#xA;			&quot;$RULENUMBER$&quot;,&#xD;&#xA;            &quot;$RULENAMESPACE$.$RULENAME$&quot;,&#xD;&#xA;            &quot;$MESSAGE$&quot;,&#xD;&#xA;            $VARIABLE$ =&gt;&#xD;&#xA;				{&#xD;&#xA;					$END$&#xD;&#xA;					throw new NotImplementedException(&quot;$RULENAMESPACE$.$RULENAME$ not implemented.&quot;);&#xD;&#xA;                }&#xD;&#xA;			);&#xD;&#xA;    }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="TypeMember" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DTO" expression="" initialRange="0" />
+      <Variable name="RULENAME" expression="" initialRange="0" />
+      <Variable name="RULENUMBER" expression="" initialRange="0" />
+      <Variable name="RULENAMESPACE" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="MESSAGE" expression="" initialRange="0" />
+      <Variable name="VARIABLE" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="1d8d125d-6698-4055-bac1-7e488f187e51" shortcut="mec" description="" text="Expect.Call($OBJECT_METHOD$).Return($RETURN_VALUE$);" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Expression" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="OBJECT_METHOD" expression="" initialRange="0" />
+      <Variable name="RETURN_VALUE" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="aa544488-b282-4cbb-843f-7a925ae21340" shortcut="nt" description="" text="[NUnit.Framework.TestAttribute]&#xD;&#xA;public void $END$()&#xD;&#xA;{&#xD;&#xA;    &#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="TypeMember" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="c6ba8f18-4340-4fc5-8e50-a231e15c7acc" shortcut="tomc" description="" text="// [TO$DATE$] $END$" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DATE" expression="getCurrentTime(&quot;yyMMdd@HHmm&quot;)" initialRange="-1" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="72a2d710-05c6-4e97-9cc3-473d53eabc9e" shortcut="propname" description="NHibernate column mapping" text="&lt;property name=&quot;$COLUMN_NAME$&quot; type=&quot;$DATA_TYPE$&quot; /&gt;" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <XMLContext type="EVERYWHERE" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="COLUMN_NAME" expression="" initialRange="0" />
+      <Variable name="DATA_TYPE" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="51d2b23a-2563-43e6-9934-654b6f691a73" shortcut="refactor" description="" text="// REFACTOR [TO$DATE$] $END$" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DATE" expression="getCurrentTime(&quot;yyMMdd@HHmm&quot;)" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="9bb89bb8-e792-428e-a44e-42f25403a79f" shortcut="todo" description="" text="// TODO [TO$DATE$] $END$" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DATE" expression="getCurrentTime(&quot;yyMMdd@HHmm&quot;)" initialRange="-1" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="86406a16-850e-44e9-b658-7d05a3b15071" shortcut="explop" description="explicit operator" text="public static explicit operator $DESTINATION$($SOURCE$ rule)&#xD;&#xA;{&#xD;&#xA;	var  converted = $END$;&#xD;&#xA;    return converted;&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="TypeMember" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DESTINATION" expression="" initialRange="0" />
+      <Variable name="SOURCE" expression="typeName()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="7c90bf6b-2166-489c-9754-81237b897d7d" shortcut="getservice" description="" text="var $VARIABLE$ = Platform.Current.ServiceManager.GetService&lt;$TYPE$&gt;(ServiceName.$END$)" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="VARIABLE" expression="" initialRange="0" />
+      <Variable name="TYPE" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="ad783d26-ab5e-4a8a-a094-d6ec68235b13" shortcut="stub" description="" text="var $VARIABLE$ = MockRepository.GenerateStub&lt;$TYPE$&gt;();" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="VARIABLE" expression="" initialRange="0" />
+      <Variable name="TYPE" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
