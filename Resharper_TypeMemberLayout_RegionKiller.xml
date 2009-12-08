@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patterns xmlns="urn:shemas-jetbrains-com:member-reordering-patterns">
+  <Pattern RemoveAllRegions="true">
+     <Entry />
+  </Pattern>
+</Patterns>
